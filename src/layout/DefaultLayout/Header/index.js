@@ -62,7 +62,7 @@ function Header() {
         <div className="flex">
           {/* header logo */}
           <Link to={routesConfig.home} className="flex select-none items-center">
-            <img src={images.logo} alt="Incredible" className="w-[280px] h-[100px] mr-4" />
+            <img src={images.logo} alt="Incredible" className="w-[280px] h-[90px] mr-4" />
           </Link>
         </div>
         <div>

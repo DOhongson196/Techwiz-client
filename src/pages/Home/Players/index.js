@@ -59,7 +59,7 @@ function Player() {
       <div className={cx('wrapper')}>
         <div className={'text-textColor dark:text-textDarkMode'}>
           <header>
-            <h2 className="text-3xl font-semibold text-center mb-10">Top Players</h2>
+            <h2 className="text-3xl font-semibold text-center mb-20">Top Players</h2>
           </header>
           <div className={cx('list-player')}>
             {LIST_PLAYER.map((item, index) => (

@@ -9,7 +9,7 @@ function Footer() {
     <div className="px-32 pt-12 w-full  bg-[#FAFAFA] dark:bg-[#0b0e11] text-base font-normal text-[#707a8a] dark:text-[#848e9c] leading-5 ">
       <div className="flex max-w-screen-xl mx-auto">
         <div className="w-[35%] pb-6 mr-20">
-          <img className="mt-4 select-none w-[280px] h-[110px]" src={images.logo} alt="Incredible" />
+          <img className="mt-4 select-none w-[280px] h-[90px]" src={images.logo} alt="Incredible" />
           <div className=" w-5/6 mt-2">Please contact us if you have any specific idea or request.</div>
           <div className="flex items-center mt-2">
             <MailIcon />
