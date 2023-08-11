@@ -10,7 +10,7 @@ function Home() {
       <HomeBanner />
       <NewLastest />
       <Matches />
-      {/* <Player /> */}
+      <Player />
       <Recommend />
     </div>
   );

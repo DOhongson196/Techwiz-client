@@ -1,4 +1,8 @@
+import classNames from 'classnames/bind';
+import styles from './Player.module.scss';
 import { useState } from 'react';
+
+const cx = classNames.bind(styles);
 
 function Player() {
   const LIST_PLAYER = [
@@ -51,53 +55,60 @@ function Player() {
   const [active, setActive] = useState('');
 
   return (
-    <div className="wrapper bg-fbfaff py-70">
-      <div className="inner mx-auto">
-        <header>
-          <h2 className="text-center mb-35 text-primary-color text-1.6rem font-semibold">Top Players</h2>
-        </header>
-        <div className="list-player grid grid-cols-2 gap-x-20 gap-y-20">
-          {LIST_PLAYER.map((item, index) => (
-            <div
-              key={item.id}
-              className={`player overflow-hidden ${active === item.name ? 'details-info active' : 'details-info'}`}
-              onClick={() => {
-                setActive(item.name);
-              }}
-            >
-              <div className="introduction cursor-pointer py-12 px-22 flex items-center gap-20 bg-rgba-50-90-255-06 rounded-10">
-                <div className="wrap-avatar w-68 h-68 relative overflow-hidden rounded-full border-1 border-white">
-                  <img className="absolute bottom-60% left-0 w-full object-cover" src={item.image} alt={item.name} />
+    <div className="flex flex-col w-[1280px] mt-12 mx-auto ">
+      <div className={cx('wrapper')}>
+        <div className={'text-textColor dark:text-textDarkMode'}>
+          <header>
+            <h2 className="text-3xl font-semibold text-center mb-10">Top Players</h2>
+          </header>
+          <div className={cx('list-player')}>
+            {LIST_PLAYER.map((item, index) => (
+              <div
+                key={item.id}
+                className={cx('player')}
+                onClick={() => {
+                  setActive(item.name);
+                }}
+              >
+                <div className={cx('introduction')}>
+                  <div className=" cursor-pointer py-3 px-6 flex items-center gap-5 bg-primary bg-opacity-60 rounded-lg">
+                    <div className={cx('wrap-avatar')}>
+                      <img className={cx('avatar')} src={item.image} alt={item.name} />
+                    </div>
+                    <span className={cx('number')}>{item.clotherNumber}</span>
+
+                    <div className={cx('name')}>
+                      <p>{item.name.toLocaleUpperCase()}</p>
+                      <span>{item.position}</span>
+                    </div>
+                  </div>
                 </div>
-                <span className="number text-8rem font-bold text-primary-color">{item.clotherNumber}</span>
-                <div className="name ml-50">
-                  <p className="text-3rem font-semibold text-010101">{item.name.toLocaleUpperCase()}</p>
-                  <span className="text-20px font-medium text-1b3152">{item.position}</span>
+                <div className={active === item.name ? cx('details-info', 'active') : cx('details-info')}>
+                  <div className={cx('content')}>
+                    <p>
+                      <span>Date of Birth: </span>
+                      <span>{item.dob}</span>
+                    </p>
+                    <p>
+                      <span>Height: </span>
+                      <span>{item.height}</span>
+                    </p>
+                    <p>
+                      <span>Weight: </span>
+                      <span>{item.weight}</span>
+                    </p>
+                    <p>
+                      <span>Country: </span>
+                      <span>{item.country}</span>
+                    </p>
+                  </div>
+                  <figure>
+                    <img src={item.image} alt={item.name} />
+                  </figure>
                 </div>
               </div>
-              <div className="content p-12 lg:p-40">
-                <p className="text-1.6rem text-717171">
-                  <span className="font-semibold">Date of Birth: </span>
-                  {item.dob}
-                </p>
-                <p className="text-1.6rem text-717171">
-                  <span className="font-semibold">Height: </span>
-                  {item.height}
-                </p>
-                <p className="text-1.6rem text-717171">
-                  <span className="font-semibold">Weight: </span>
-                  {item.weight}
-                </p>
-                <p className="text-1.6rem text-717171">
-                  <span className="font-semibold">Country: </span>
-                  {item.country}
-                </p>
-              </div>
-              <figure className="w-50 relative">
-                <img className="absolute w-full object-cover" src={item.image} alt={item.name} />
-              </figure>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
