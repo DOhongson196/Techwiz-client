@@ -14,6 +14,7 @@ const routes = {
   notFound: '/*',
   activeuser: '/activeuser/:confirm',
   resetpass: '/resetpass',
+  players: '/players',
 };
 
 export default routes;

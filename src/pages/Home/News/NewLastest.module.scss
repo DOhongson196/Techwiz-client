@@ -1,6 +1,6 @@
 .wrapper {
   width: 100%;
-  padding: 0px 80px;
+  padding: 80px 0;
   margin-top: 40px;
 }
 
@@ -52,6 +52,7 @@
 .item {
   cursor: pointer;
   border-radius: 12px;
+  overflow: hidden;
   img.thumb {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -86,7 +87,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 18px;
     margin: 0 12px 20px 12px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -135,7 +136,7 @@
 .item:nth-child(2) {
   figure {
     position: relative;
-    height: 776px;
+    height: 760px;
   }
 
   img.thumb {

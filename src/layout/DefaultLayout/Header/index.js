@@ -80,7 +80,7 @@ function Header() {
               SCHEDULE
             </Button>
 
-            <Button to={routesConfig.explore} text className={'text-xl'}>
+            <Button to={routesConfig.players} text className={'text-xl'}>
               PLAYERS
             </Button>
 
