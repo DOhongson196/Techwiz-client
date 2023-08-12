@@ -57,12 +57,12 @@ function Header() {
   }, []);
 
   return (
-    <header className="bg-white dark:bg-bgDarkMode h-32 fixed w-full top-0 left-0 flex shadow-sm  justify-center z-50 border-b border-[#eaecef]">
+    <header className="bg-white dark:bg-bgDarkMode h-24 fixed w-full top-0 left-0 flex shadow-sm  justify-center z-50 border-b border-[#eaecef]">
       <div className=" w-[1280px] flex items-center justify-between">
         <div className="flex">
           {/* header logo */}
           <Link to={routesConfig.home} className="flex select-none items-center">
-            <img src={images.logo} alt="Incredible" className="w-[280px] h-[90px] mr-4" />
+            <img src={images.logo} alt="Incredible" className="w-[219px] h-[68px] mr-4" />
           </Link>
         </div>
         <div>
@@ -80,11 +80,11 @@ function Header() {
               SCHEDULE
             </Button>
 
-            <Button to={routesConfig.explore} text className={'text-xl'}>
+            <Button to={routesConfig.players} text className={'text-xl'}>
               PLAYERS
             </Button>
 
-            <Button to={routesConfig.explore} text className={'text-xl'}>
+            <Button to={routesConfig.news} text className={'text-xl'}>
               NEWS & UPDATES
             </Button>
           </div>

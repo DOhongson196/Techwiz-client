@@ -18,6 +18,9 @@ import MyOrder from '../pages/MyOrder';
 import LogOut from '../pages/Logout';
 import ActiveUser from '../pages/ActiveUser';
 import ResetPass from '../pages/ResetPass';
+import AllPlayers from '../pages/AllPlayers';
+import AllNews from '../pages/AllNews';
+import NewsDetails from '../pages/NewsDetails';
 
 const publicRoutes = [
   { path: routesConfig.home, component: Home },
@@ -31,6 +34,9 @@ const publicRoutes = [
   { path: routesConfig.logout, component: LogOut },
   { path: routesConfig.resetpass, component: ResetPass },
   { path: routesConfig.activeuser, component: ActiveUser, layout: HeaderOnly },
+  { path: routesConfig.players, component: AllPlayers },
+  { path: routesConfig.news, component: AllNews },
+  { path: routesConfig.newsDetails, component: NewsDetails },
 ];
 
 const privateRoutes = [

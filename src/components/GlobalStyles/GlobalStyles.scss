@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #f3df5d;
+  --header-text-color: #010101;
+  --paragraph-text-color: #717171;
+  --width-content: 1216px;
+  --height-header: 96px;
+}
 //font
 
 @layer base {

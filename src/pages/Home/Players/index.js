@@ -63,14 +63,13 @@ function Player() {
           </header>
           <div className={cx('list-player')}>
             {LIST_PLAYER.map((item, index) => (
-              <div
-                key={item.id}
-                className={cx('player')}
-                onClick={() => {
-                  setActive(item.name);
-                }}
-              >
-                <div className={cx('introduction')}>
+              <div key={item.id} className={cx('player')}>
+                <div
+                  className={cx('introduction')}
+                  onClick={() => {
+                    setActive(item.name);
+                  }}
+                >
                   <div className=" cursor-pointer py-3 px-6 flex items-center gap-5 bg-primary bg-opacity-60 rounded-lg">
                     <div className={cx('wrap-avatar')}>
                       <img className={cx('avatar')} src={item.image} alt={item.name} />

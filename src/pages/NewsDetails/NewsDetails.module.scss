@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+.wrapper {
+  width: 100%;
+  margin-top: var(--height-header);
+}
+
+.inner {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  width: var(--width-content);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 434px;
+  column-gap: 55px;
+}
+
+.news-detail {
+  .title {
+    color: #222;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px; /* 112.5% */
+  }
+
+  .thumb {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  .time {
+    color: #4d4d4e;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .content {
+    margin-top: 30px;
+    color: #717171;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.6;
+  }
+}
+
+.recomend {
+  height: fit-content;
+  border-radius: 20px;
+  padding: 18px;
+  background: #fff;
+  box-shadow: 6px 6px 60px -6px rgba(45, 45, 45, 0.08);
+}
+
+.recomend-title {
+  color: #010101;
+  padding-bottom: 4px;
+  font-family: 600;
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+}
+.wrap-suggest {
+  margin: 14px 0;
+}
+
+.wrap-suggest .item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  figure {
+    width: 160px;
+    height: 110px;
+    flex-shrink: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  p {
+    color: #010101;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 146.667% */
+    letter-spacing: -0.15px;
+  }
+}
+
+.wrap-suggest .item + .item {
+  margin-top: 20px;
+}
+
+.cat {
+  color: #717171;
+  padding: 8px 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  cursor: pointer;
+
+  &::before {
+    display: inline-block;
+    content: '';
+    height: 6px;
+    width: 6px;
+    background-color: #717171;
+    border-radius: 50%;
+    margin-right: 8px;
+    transform: translateY(-2px);
+  }
+}
