@@ -18,6 +18,8 @@ import MyOrder from '../pages/MyOrder';
 import LogOut from '../pages/Logout';
 import ActiveUser from '../pages/ActiveUser';
 import ResetPass from '../pages/ResetPass';
+import AboutUs from '../pages/AboutUs';
+// import TopScore from '../pages/TopScore';
 import AllPlayers from '../pages/AllPlayers';
 import AllNews from '../pages/AllNews';
 import NewsDetails from '../pages/NewsDetails';
@@ -26,6 +28,8 @@ const publicRoutes = [
   { path: routesConfig.home, component: Home },
   { path: routesConfig.authority, component: NotAuthority },
   { path: routesConfig.explore, component: Explore },
+  { path: routesConfig.aboutus, component: AboutUs },
+  // { path: routesConfig.topscore, component: TopScore },
   { path: routesConfig.login, component: Login, layout: HeaderOnly },
   { path: routesConfig.register, component: Register, layout: HeaderOnly },
   { path: routesConfig.product, component: Ranking },
