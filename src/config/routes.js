@@ -2,6 +2,8 @@ const routes = {
   home: '/',
   authority: '/authority',
   explore: '/explore',
+  aboutus: '/aboutus',
+  // topscore: '/topscore',
   profile: '/profile',
   register: '/register',
   login: '/login',
