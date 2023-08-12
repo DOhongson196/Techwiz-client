@@ -9,12 +9,12 @@ function DefaultLayout({ children }) {
   const context = useContext(DarkModeContext);
   return (
     <div>
-      <header className="bg-white dark:bg-bgDarkMode h-32 px-48 w-full  flex shadow-sm  justify-center z-50 border-b border-[#eaecef]">
+      <header className="bg-white dark:bg-bgDarkMode h-23 px-48 w-full  flex shadow-sm  justify-center z-50 border-b border-[#eaecef]">
         <div className=" w-[1280px] flex items-center justify-between">
           <div className="flex flex-1">
             {/* header logo */}
             <Link to={routesConfig.home} className="flex select-none">
-              <img src={images.logo} alt="Incredible" className="w-[280px] h-[90px]" />
+              <img src={images.logo} alt="Incredible" className="w-[219px] h-[68px]" />
             </Link>
             {/* header darkmode */}
           </div>

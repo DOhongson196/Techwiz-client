@@ -6,7 +6,7 @@ import Recommend from './Recommend';
 
 function Home() {
   return (
-    <div className="flex min-h-screen flex-col mt-[128px] pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode">
+    <div className="flex min-h-screen flex-col mt-[96px] pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode">
       <HomeBanner />
       <NewLastest />
       <Matches />

@@ -1,5 +1,5 @@
 .wrapper {
-  margin-top: 128px;
+  margin-top: var(--height-header);
   width: 100%;
 }
 
@@ -10,7 +10,7 @@
 
   header {
     position: fixed;
-    top: 128px;
+    top: var(--height-header);
     width: var(--width-content);
     padding-top: 20px;
     padding-bottom: 12px;
@@ -47,6 +47,7 @@
 
 .player {
   overflow: hidden;
+  height: fit-content;
 }
 
 .introduction {

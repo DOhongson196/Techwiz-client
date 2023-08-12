@@ -21,3 +21,6 @@ export const API_CART = 'http://localhost:8080/api/v1/cart';
 
 //order
 export const API_ORDER = 'http://localhost:8080/api/v1/order';
+
+//new
+export const API_NEWS = 'http://localhost:8080/api/v1/news';
