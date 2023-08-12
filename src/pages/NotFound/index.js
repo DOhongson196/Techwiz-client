@@ -9,7 +9,7 @@ function NotFound() {
         <div className="w-[340px]">
           <img src={images.notFound} alt="NotFound" />
         </div>
-        <div className="mt-32 items-center">
+        <div className="mt-20 items-center">
           <span className="text-2xl text-textColor font-semibold dark:text-textDarkMode">
             Sorry! The page you’re looking for cannot be found.
           </span>

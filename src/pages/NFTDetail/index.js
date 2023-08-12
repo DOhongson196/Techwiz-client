@@ -37,7 +37,7 @@ function NFTDetail() {
           <ToastContainer />
         </div>
       ) : (
-        <div className="flex flex-col mt-32 pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode text-textColor dark:text-textDarkMode">
+        <div className="flex flex-col mt-20 pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode text-textColor dark:text-textDarkMode">
           <div className="flex relative max-w-screen-xl mx-auto w-full py-16">
             <div className="flex flex-col w-full gap-5 p-2 mx-auto select-none sm:p-6 sm:h-[500px] sm:flex-row ">
               <div className="bg-slate-300 dark:bg-slate-500 sm:h-full sm:w-[360px] rounded-xl animate-pulse"></div>

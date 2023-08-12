@@ -9,7 +9,7 @@ function DefaultLayout({ children }) {
   const context = useContext(DarkModeContext);
   return (
     <div>
-      <header className="bg-white dark:bg-bgDarkMode h-23 px-48 w-full  flex shadow-sm  justify-center z-50 border-b border-[#eaecef]">
+      <header className="bg-white dark:bg-bgDarkMode h-24 px-48 w-full  flex shadow-sm  justify-center z-50 border-b border-[#eaecef]">
         <div className=" w-[1280px] flex items-center justify-between">
           <div className="flex flex-1">
             {/* header logo */}

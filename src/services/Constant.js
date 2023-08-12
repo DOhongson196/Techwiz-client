@@ -24,3 +24,9 @@ export const API_ORDER = 'http://localhost:8080/api/v1/order';
 
 //new
 export const API_NEWS = 'http://localhost:8080/api/v1/news';
+
+//Players
+export const API_PLAYER = 'http://localhost:8080/api/v1/player';
+export const getPlayerImageUrl = (filename) => {
+  return API_PLAYER + '/images/' + filename;
+};

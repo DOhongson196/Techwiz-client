@@ -149,7 +149,7 @@ function Matches() {
     <div className="w-100% bg-[#f5f5f5] dark:bg-bgDarkMode p-20">
       <div className={cx('inner')}>
         <header>
-          <h2 className="text-center mb-10 text-4xl font-semibold text-textColor dark:text-textDarkMode">Matches</h2>
+          <h2 className="text-center mb-10 text-5xl font-semibold text-textColor dark:text-textDarkMode">Matches</h2>
         </header>
         <div className={cx('matches-carousel')}>
           <div className={cx('actions')}>

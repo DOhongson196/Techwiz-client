@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 
 function AboutUs() {
   return (
-    <div className="flex min-h-screen flex-col mt-[128px] bg-[#FFFFFF] dark:bg-bgDarkMode">
+    <div className="flex min-h-screen flex-col mt-[90px] bg-[#FFFFFF] dark:bg-bgDarkMode">
       {/* <!--About Us--> */}
       <div className={cx('about__contain')}>
         <div className="flex">

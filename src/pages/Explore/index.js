@@ -39,7 +39,7 @@ function Explore() {
     }
   }, [active]);
   return (
-    <div className="flex min-h-screen flex-col mt-32 pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode text-textColor dark:text-textDarkMode">
+    <div className="flex min-h-screen flex-col mt-20 pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode text-textColor dark:text-textDarkMode">
       <div className="flex relative flex-col max-w-screen-xl mx-auto w-full">
         <div className=" text-textColor font-semibold  dark:text-textDarkMode my-10 text-3xl">Ranking</div>
         <CollectionMenu active={active} setAcviteTrue={() => setAcvite(true)} setAcviteFalse={() => setAcvite(false)} />

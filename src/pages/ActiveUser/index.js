@@ -43,7 +43,7 @@ function ActiveUser() {
   return (
     <div className="flex min-h-[87.2vh] flex-col bg-[#FFFFFF] dark:bg-bgDarkMode">
       {success ? (
-        <div className="mt-32 mx-auto">
+        <div className="mt-20 mx-auto">
           <div className="flex text-textColor dark:text-textDarkMode w-full justify-center text-9xl mb-20">
             <FontAwesomeIcon icon={faHouseUser} />
           </div>
@@ -59,7 +59,7 @@ function ActiveUser() {
           </div>
         </div>
       ) : (
-        <div className="mt-32 mx-auto">
+        <div className="mt-20 mx-auto">
           <div className="text-textColor text-xl mx-auto dark:text-textDarkMode w-[800px] font-semibold">
             We regret to inform you that the activation of your account has failed. We apologize for any inconvenience
             caused.

@@ -1,6 +1,8 @@
 import classNames from 'classnames/bind';
 import styles from './NewLastest.module.scss';
 import images from '../../../assets/images';
+import { Link } from 'react-router-dom';
+import routesConfig from '../../../config/routes';
 
 const cx = classNames.bind(styles);
 
@@ -66,7 +68,9 @@ function NewLastest() {
             <span>Our Latest News</span>
             <h2 className="text-[#1e2329] dark:text-textDarkMode ">Today on Soccer Club</h2>
           </div>
-          <span className={cx('link')}>All News</span>
+          <Link to={routesConfig.news} className="flex select-none items-center">
+            <span className={cx('link')}>All News</span>
+          </Link>
         </header>
         <div className={cx('list-news')}>
           <div className={cx('item')}>

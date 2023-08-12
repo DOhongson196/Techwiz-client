@@ -1,7 +1,9 @@
 import classNames from 'classnames/bind';
 import styles from './AllPlayers.module.scss';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import useOnClickOutside from '../../hooks/useOnClickOutSide';
+import { API_PLAYER, getPlayerImageUrl } from '../../services/Constant';
+import axios from 'axios';
 
 const cx = classNames.bind(styles);
 
@@ -74,166 +76,21 @@ function AllPlayers() {
     },
   ];
 
-  const LIST_PLAYER = [
-    {
-      id: 1,
-      name: 'Herlison Caion',
-      country: 'Brazil',
-      dob: '05/10/1990',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/6a5d33d8-03a1-4c3e-9280-ec7be303fb13.png',
-      position: 'Attacker',
-      clotherNumber: 17,
-    },
-    {
-      id: 2,
-      name: 'Herlison',
-      country: 'Brazil',
-      dob: '05/10/1990',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/1dfc52a1-3849-4393-9a37-931ab748e8cb.png',
-      position: 'Attacker',
-      clotherNumber: 99,
-    },
-    {
-      id: 3,
-      name: 'Do Duy Manh',
-      country: 'Vietnam',
-      dob: '05/10/1996',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/7d22e9f6-1857-4151-bea6-9ca41221c7c6.png',
-      position: 'Defender',
-      clotherNumber: 2,
-    },
-    {
-      id: 4,
-      name: 'Hoang Viet Anh',
-      country: 'Vietnam',
-      dob: '05/10/1990',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/9d112f13-decb-4ddc-9a1b-99d613480836.png',
-      position: 'Defender',
-      clotherNumber: 20,
-    },
-    {
-      id: 5,
-      name: 'Bui Tuan Truong',
-      country: 'Vietnam',
-      dob: '05/10/1990',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/3ae12f6b-4ae5-4472-8f9a-370d42705e6d.png',
-      position: 'Gloalie',
-      clotherNumber: 1,
-    },
-    {
-      id: 6,
-      name: 'Quan Van Chuan',
-      country: 'Vietnam',
-      dob: '05/10/1990',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/d28f8afb-1173-4707-8aae-14455fc84615.png',
-      position: 'Gloalie',
-      clotherNumber: 37,
-    },
-
-    {
-      id: 7,
-      name: 'Tran Van Dat',
-      country: 'Vietnam',
-      dob: '05/10/2000',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/45b722ad-f7eb-4ede-bab2-a867875ff38f.png',
-      position: 'Midfieder',
-      clotherNumber: 65,
-    },
-    {
-      id: 8,
-      name: 'Mach Ngoc Ha',
-      country: 'Vietnam',
-      dob: '05/10/2000',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/e310cb37-12dc-4ce0-bb57-7792e54b3559.png',
-      position: 'Midfieder',
-      clotherNumber: 22,
-    },
-    {
-      id: 9,
-      name: 'Le Xuan Tu',
-      country: 'Vietnam',
-      dob: '05/10/2000',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/5bf5de6f-fb72-4708-983f-0e13b353dcf6.png',
-      position: 'Midfieder',
-      clotherNumber: 25,
-    },
-    {
-      id: 10,
-      name: 'Mguyen Van Quyet',
-      country: 'Vietnam',
-      dob: '05/10/2000',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/d1876322-e6f6-415b-9f22-eb5f4ba36c6b.png',
-      position: 'Midfieder',
-      clotherNumber: 10,
-    },
-    {
-      id: 11,
-      name: 'Dau Van Toan',
-      country: 'Vietnam',
-      dob: '05/10/2000',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/9ebd8b32-7989-4d3d-9370-b5e66c135d4d.png',
-      position: 'Midfieder',
-      clotherNumber: 22,
-    },
-    {
-      id: 12,
-      name: 'Le Xuan Tu',
-      country: 'Vietnam',
-      dob: '05/10/2000',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/7838c89b-f7e5-446a-b31b-0d1ee1716eeb.png',
-      position: 'Midfieder',
-      clotherNumber: 8,
-    },
-    {
-      id: 13,
-      name: 'Do Hung Dung',
-      country: 'Vietnam',
-      dob: '05/10/2000',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/db9fea09-6686-43a2-9429-d9697349914b.png',
-      position: 'Midfieder',
-      clotherNumber: 88,
-    },
-    {
-      id: 14,
-      name: 'Nguyen Van Cong',
-      country: 'Vietnam',
-      dob: '05/10/2000',
-      height: 184,
-      weight: 82,
-      image: 'https://cms.hanoifc.net/images/4212a77c-5336-4767-9bad-6f12dbf6ef21.png',
-      position: 'Gloalie',
-      clotherNumber: 18,
-    },
-  ];
-
   const TYPE_TRAINER = 'trainer';
   const TYPE_PLAYER = 'player';
+
+  const [player, setPlayer] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(API_PLAYER)
+      .then((res) => {
+        setPlayer(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   const [typeRender, setTypeRender] = useState(TYPE_PLAYER);
 
@@ -304,19 +161,19 @@ function AllPlayers() {
             </>
           ) : (
             <>
-              {LIST_PLAYER.map((item, index) => (
+              {player.map((item, index) => (
                 <div key={item.id} className={cx('player')}>
                   <div
                     ref={itemRef}
                     className={cx('introduction')}
                     onClick={() => {
-                      setActive(item.name);
+                      setActive(item?.name);
                     }}
                   >
                     <div className={cx('wrap-avatar')}>
-                      <img className={cx('avatar')} src={item.image} alt={item.name} />
+                      <img className={cx('avatar')} src={getPlayerImageUrl(item?.image)} alt={item.name} />
                     </div>
-                    <span className={cx('number')}>{item.clotherNumber}</span>
+                    <span className={cx('number')}>{item.number}</span>
 
                     <div className={cx('name')}>
                       <p>{item.name.toLocaleUpperCase()}</p>
@@ -327,7 +184,7 @@ function AllPlayers() {
                     <div className={cx('content')}>
                       <p>
                         <span>Date of Birth: </span>
-                        <span>{item.dob}</span>
+                        <span>{item.dateOfBirth}</span>
                       </p>
                       <p>
                         <span>Height: </span>
@@ -339,11 +196,11 @@ function AllPlayers() {
                       </p>
                       <p>
                         <span>Country: </span>
-                        <span>{item.country}</span>
+                        <span>{item.national}</span>
                       </p>
                     </div>
                     <figure>
-                      <img src={item.image} alt={item.name} />
+                      <img src={getPlayerImageUrl(item?.image)} alt={item.name} />
                     </figure>
                   </div>
                 </div>

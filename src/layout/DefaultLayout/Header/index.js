@@ -68,6 +68,9 @@ function Header() {
         <div>
           {/* header Ranking */}
           <div className="flex items-center text-xl">
+            <Button to={routesConfig.aboutus} text className={'text-xl'}>
+              ABOUT US
+            </Button>
             <div>
               <MenuUtil items={category}>
                 <div className="select-none mx-5 cursor-pointer hover:text-[#c99400] font-semibold text-textColor dark:text-textDarkMode dark:hover:text-[#c99400]">
@@ -75,11 +78,6 @@ function Header() {
                 </div>
               </MenuUtil>
             </div>
-
-            <Button to={routesConfig.explore} text className={'text-xl'}>
-              SCHEDULE
-            </Button>
-
             <Button to={routesConfig.players} text className={'text-xl'}>
               PLAYERS
             </Button>

@@ -35,7 +35,7 @@ function Cart() {
   return (
     <>
       {carts.length > 0 ? (
-        <div className="flex flex-col mt-32 pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode">
+        <div className="flex flex-col mt-20 pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode">
           <div className="flex relative flex-col max-w-screen-xl mx-auto w-full">
             {/* Heading */}
             <div className="text-textColor mx-auto dark:text-textDarkMode my-10 text-3xl font-semibold">
@@ -99,7 +99,7 @@ function Cart() {
           </div>
         </div>
       ) : (
-        <div className="flex flex-col mt-32 bg-[#FFFFFF] dark:bg-bgDarkMode">
+        <div className="flex flex-col mt-20 bg-[#FFFFFF] dark:bg-bgDarkMode">
           <div className="flex relative flex-col max-w-screen-xl mx-auto w-full items-center justify-center">
             <div className="text-textColor mx-auto dark:text-textDarkMode mt-10 text-3xl font-semibold">
               Shopping Cart

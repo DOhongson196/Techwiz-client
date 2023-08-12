@@ -49,7 +49,7 @@ function ResetPass() {
       });
   };
   return (
-    <div className="flex flex-col mt-32 pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode">
+    <div className="flex flex-col mt-20 pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode">
       <div className=" flex-col max-w-screen-xl mx-auto w-full text-textColor dark:text-textDarkMode">
         <div className="flex justify-center  my-10 text-3xl font-semibold mx-auto">Reset Password</div>
         {page === 1 && (

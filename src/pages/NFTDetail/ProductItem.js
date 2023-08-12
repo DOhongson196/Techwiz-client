@@ -61,7 +61,7 @@ function ProductItem({ product = {}, url = false }) {
     fectchApi();
   };
   return (
-    <div className="flex flex-col mt-32 pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode text-textColor dark:text-textDarkMode">
+    <div className="flex flex-col mt-20 pb-20 bg-[#FFFFFF] dark:bg-bgDarkMode text-textColor dark:text-textDarkMode">
       <div className="flex relative max-w-screen-xl mx-auto w-full py-16">
         {/* img */}
         <div className="w-[360px] h-[520px] mr-24 rounded-xl overflow-hidden">
