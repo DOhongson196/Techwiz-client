@@ -14,7 +14,7 @@ function DefaultLayout({ children }) {
           <div className="flex flex-1">
             {/* header logo */}
             <Link to={routesConfig.home} className="flex select-none">
-              <img src={images.logo} alt="Incredible" className="w-[219px] h-[68px]" />
+              <img src={images.logo} alt="VILLARREAL" className="w-[219px] h-[68px]" />
             </Link>
             {/* header darkmode */}
           </div>

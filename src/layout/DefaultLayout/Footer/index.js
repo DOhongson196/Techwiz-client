@@ -9,7 +9,7 @@ function Footer() {
     <div className="px-32 pt-12 w-full  bg-[#FAFAFA] dark:bg-[#0b0e11] text-base font-normal text-[#707a8a] dark:text-[#848e9c] leading-5 ">
       <div className="flex max-w-screen-xl mx-auto">
         <div className="w-[35%] pb-6 mr-20">
-          <img className="mt-4 select-none w-[219px] h-[68px]" src={images.logo} alt="Incredible" />
+          <img className="mt-4 select-none w-[219px] h-[68px]" src={images.logo} alt="VILLARREAL" />
           <div className=" w-5/6 mt-2">Please contact us if you have any specific idea or request.</div>
           <div className="flex items-center mt-2">
             <MailIcon />
@@ -19,9 +19,9 @@ function Footer() {
         <div className="w-3/5 pb-6 flex">
           <div className="w-1/2">
             <FooterItem heading>About Us</FooterItem>
-            <FooterItem content>About Incredible</FooterItem>
+            <FooterItem content>About VILLARREAL</FooterItem>
             <FooterItem content>Careers</FooterItem>
-            <FooterItem content>Incredible Blog</FooterItem>
+            <FooterItem content>VILLARREAL Blog</FooterItem>
             <FooterItem content>Community</FooterItem>
             <FooterItem content>Terms</FooterItem>
           </div>

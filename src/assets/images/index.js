@@ -26,6 +26,9 @@ const images = {
   news4: require('./news4.webp'),
   news5: require('./news5.webp'),
   news6: require('./news6.jpg'),
+
+  thumbVideo1: require('./maxresdefault.jpg'),
+  thumbVideo2: require('./maxresdefault2.jpg'),
 };
 
 export default images;

@@ -11,7 +11,7 @@ function Login() {
       <div className="flex mt-10 mx-auto w-full items-center justify-center">
         <div className="flex flex-col p-8  w-[440px] shadow-xl text-sm rounded-xl  text-textColor  dark:text-textDarkMode ">
           {/* heading */}
-          <div className="  my-10 text-3xl font-semibold">Incredible Login</div>
+          <div className="  my-10 text-3xl font-semibold">VILLARREAL Login</div>
           {/* input */}
           <FormLogin />
           {/* or */}
@@ -37,7 +37,7 @@ function Login() {
             </Link>
             <Link to={routesConfig.register}>
               <div className="text-[#c99400] dark:text-[#f0b90b] cursor-pointer mt-6 font-semibold hover:text-primary hover:underline">
-                Create a Incredible Account
+                Create a VILLARREAL Account
               </div>
             </Link>
           </div>

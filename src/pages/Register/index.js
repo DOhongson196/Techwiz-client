@@ -12,7 +12,7 @@ function Register() {
         <div className="flex p-8  w-[1000px] shadow-xl text-sm rounded-xl  text-textColor  dark:text-textDarkMode ">
           <div className="w-[390px] mr-16">
             {/* heading */}
-            <div className="  my-10 text-3xl font-semibold">Welcome to Incredible!</div>
+            <div className="  my-10 text-3xl font-semibold">Welcome to VILLARREAL!</div>
             {/* input */}
             <FormRegister />
             {/* or */}
