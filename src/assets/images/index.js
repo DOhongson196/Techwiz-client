@@ -20,11 +20,11 @@ const images = {
   preIcon: require('./preIcon.svg').default,
   nextIcon: require('./nextIcon.svg').default,
 
-  news1: require('./news1.webp'),
-  news2: require('./news2.webp'),
-  news3: require('./news3.webp'),
-  news4: require('./news4.webp'),
-  news5: require('./news5.webp'),
+  news1: require('./news1.jpg'),
+  news2: require('./news2.jpg'),
+  news3: require('./news3.jpg'),
+  news4: require('./news4.jpg'),
+  news5: require('./news5.jpg'),
   news6: require('./news6.jpg'),
 
   thumbVideo1: require('./maxresdefault.jpg'),
