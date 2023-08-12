@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/deploy-github/static/css/main.afa0ff48.css",
+    "main.js": "/deploy-github/static/js/main.6b76aceb.js",
+    "static/js/787.2cc4d09c.chunk.js": "/deploy-github/static/js/787.2cc4d09c.chunk.js",
+    "static/media/homeSlide3.jpg": "/deploy-github/static/media/homeSlide3.76f226c0eaad17b5e7ee.jpg",
+    "static/media/homeSlide1.jpg": "/deploy-github/static/media/homeSlide1.dfe86ee45cfd5660a14d.jpg",
+    "static/media/homeSlide2.jpg": "/deploy-github/static/media/homeSlide2.3a139d5a2baace9d43b3.jpg",
+    "static/media/banner-camiseta-950-copia-ing.jpg": "/deploy-github/static/media/banner-camiseta-950-copia-ing.83af72752beca7a4267e.jpg",
+    "static/media/news6.jpg": "/deploy-github/static/media/news6.d7d14f2b9c0bd423f2f3.jpg",
+    "static/media/news3.jpg": "/deploy-github/static/media/news3.665a457921e72475c6eb.jpg",
+    "static/media/news1.jpg": "/deploy-github/static/media/news1.94bfb589f5c11a1cd1db.jpg",
+    "static/media/maxresdefault2.jpg": "/deploy-github/static/media/maxresdefault2.4d8e2453999f27a48542.jpg",
+    "static/media/maxresdefault.jpg": "/deploy-github/static/media/maxresdefault.dc78408e92c333d0914a.jpg",
+    "static/media/ProximaNova-Semibold.woff2": "/deploy-github/static/media/ProximaNova-Semibold.db7972dbe0b808f96bae.woff2",
+    "static/media/news4.jpg": "/deploy-github/static/media/news4.2a5cde40a98829996da5.jpg",
+    "static/media/brugge.svg": "/deploy-github/static/media/brugge.b5b19f46f76067fd2dc5e35866789e46.svg",
+    "static/media/logoRegister.png": "/deploy-github/static/media/logoRegister.a4d0696a3c964bbb3f3b.png",
+    "static/media/Proxima-Nova-Bold.woff": "/deploy-github/static/media/Proxima-Nova-Bold.6cd7dcaa6293ecf61e80.woff",
+    "static/media/404-error.png": "/deploy-github/static/media/404-error.75adfe37e66907e56832.png",
+    "static/media/anh1.jpg": "/deploy-github/static/media/anh1.ab290f0b0b4089479c7a.jpg",
+    "static/media/Proxima-Nova-Regular.woff2": "/deploy-github/static/media/Proxima-Nova-Regular.6c83037ae28747e6d774.woff2",
+    "static/media/empty-cart.png": "/deploy-github/static/media/empty-cart.3fb2f85a27ef1e5245ad.png",
+    "static/media/news2.jpg": "/deploy-github/static/media/news2.c85e41545cc682ac89b4.jpg",
+    "static/media/news5.jpg": "/deploy-github/static/media/news5.fc30b655b70928243cc1.jpg",
+    "static/media/villareal.svg": "/deploy-github/static/media/villareal.2a0341d071783b250cde50bbaad3e029.svg",
+    "static/media/barcelona.svg": "/deploy-github/static/media/barcelona.da856212c572fd7830e9035624a8e103.svg",
+    "static/media/atleticoMadrid.svg": "/deploy-github/static/media/atleticoMadrid.c54aac26a6555a62a29882be7c2449a3.svg",
+    "static/media/loscLille.svg": "/deploy-github/static/media/loscLille.92d302a0e0fb6732517abc2d8054ade3.svg",
+    "static/media/nextIcon.svg": "/deploy-github/static/media/nextIcon.f9c9eec47099d406d779002ab03cd80e.svg",
+    "static/media/preIcon.svg": "/deploy-github/static/media/preIcon.ee2315965a4bad4debaccffeaf9b770d.svg",
+    "static/media/logoGoole.svg": "/deploy-github/static/media/logoGoole.330a2dc7f18d7502647dc5d6f93812ec.svg",
+    "index.html": "/deploy-github/index.html",
+    "static/media/shareIcon.svg": "/deploy-github/static/media/shareIcon.5b3fdea041a426fbfc72f724c100c5af.svg",
+    "main.afa0ff48.css.map": "/deploy-github/static/css/main.afa0ff48.css.map",
+    "main.6b76aceb.js.map": "/deploy-github/static/js/main.6b76aceb.js.map",
+    "787.2cc4d09c.chunk.js.map": "/deploy-github/static/js/787.2cc4d09c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afa0ff48.css",
+    "static/js/main.6b76aceb.js"
+  ]
+}
